@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+.inner {
+    width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    text-align: right;
+    position: relative;
+    height: 100px;
+}
+
+h1 {
+    position: absolute;
+    top: 8px;
+}
+
+header h1 img {
+    width: 277px;
+}
+
+header ul {
+    display: inline-block;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    line-height: 1.3;
+    text-align: left;
+    vertical-align: middle;
+    padding: 20px 0;
+    margin-left:20px;
+}
+
+header ul li h2 {
+    font-size: 13px;
+    color: #6c757d;
+    font-weight: lighter;
+}
+
+header ul li p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+header ul li a {
+    display: inline-block;
+    line-height: 48px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c757d;
+    border-radius: 5px;
+    padding: 0 17px;
+}
+
+header ul li a:hover {
+    background-color: #5a6268;
+}
+
+nav {
+    background-color: #343A3F;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 35px;
+}
+
+nav ul li :hover {
+    color: rgba(255,255,255,.75);
+}
+
+nav ul li a {
+    display: inline-block;
+    line-height: 55px;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.key_visual {
+    background-image: url(../img/top-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    text-align: right;
+}
+
+.key_visual_content {
+    display: inline-block;
+    text-align: left;
+    margin-top: 65px;
+    width: 560px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    padding:15px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.key_visual_content h2 {
+    font-size: 57px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.key_visual_content p {
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+.key_visual_content hr {
+    margin: 16px 0;
+}
+
+.key_visual_content p:last-child {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
