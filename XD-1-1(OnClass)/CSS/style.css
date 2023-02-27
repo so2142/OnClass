@@ -15,6 +15,7 @@ body {
     font-family: 'Noto Serif','Noto Serif JP', serif;
 }
 
+
 img {
     width: 100%;
     vertical-align: bottom;
@@ -129,17 +130,25 @@ img {
     transition: .3s;
 }
 
-.site-title {
+.site-title a {
     font-size: 2.6rem;
-
 }
 
 .nav-list {
     display: flex;
 }
 
-.nav-item {
+.nav-item a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+}
+
+.nav-item a {
     margin-right: 30px;
+    position: relative;
+    display: inline-block;
 }
 
 .nav-item:last-child {
@@ -170,6 +179,12 @@ img {
     background-position: center;
 }
 
+.fv img {
+  height: 100vh;
+  min-height: 550px;
+  object-fit: cover;
+}
+
 .main-copy {
     position: absolute;
     left: 120px;
@@ -188,9 +203,8 @@ img {
 }
 
 .slick-arrow {
-  display: none;
+  display: none !important;
 }
-
 
 /* ---------------------------------------- */
 /* concept
@@ -366,9 +380,15 @@ img {
   /* ---------------------------------------- */
 
   .header {
-    padding: 30px 4vw 0;
+    padding: 40px 4vw 0;
+    background-color: #282F35;
+    position: fixed;
   }
-  
+
+  .header a {
+    font-size: 30px;
+  }
+
   .header-nav {
     display: none;
     position: fixed;
@@ -406,11 +426,32 @@ img {
     width: 30px;
     height: 3px;
     background-color: #fff;
+    transition: .3s;
   }
 
   .bar_top,
-  .bar_mid {
-    margin-bottom: 8px;
+  .bar_mid,
+  .bar_bottom {
+    margin: 8px;
+  }
+
+  .burger-btn.cross .bar_top {
+    transform: rotate(45deg) translate(8px,8px);
+    transition: .3s;
+  }
+
+  .burger-btn.cross .bar_mid {
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .burger-btn.cross .bar_bottom {
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+  }
+
+  body.noscroll {
+    overflow: hidden;
   }
 
   button {

@@ -24,7 +24,15 @@ $(function(){
 $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
-    speed: 1000,
     fade: true,
+    speed: 1000,
     cssEase: 'linear'
+});
+
+
+// ハンバーガーメニュー
+$('.burger-btn').on('click',function(){
+    $('header-nav').fadeToggle(300);
+    $(this).toggleClass('cross');
+    $('body').toggleClass('noscroll');
 });
